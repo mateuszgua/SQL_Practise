@@ -1,0 +1,8 @@
+-- 4. List all employees by name, and the name of their manager. 
+--    If the employee doesn't have a manager, leave the column as NULL.
+SELECT A.EMP_NAME AS EMPLOYEE, B.EMP_NAME AS MANAGER
+FROM EMPLOYEE A 
+LEFT OUTER JOIN
+EMPLOYEE B 
+ON A.MANAGER_ID=B.EMP_ID
+ORDER BY 2;

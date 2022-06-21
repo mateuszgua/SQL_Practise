@@ -1,0 +1,4 @@
+-- 2. List all following links that were created before September 1st, 1993.
+SELECT USER_ID, FOLLOWS, DB_DATE
+FROM FOLLOWS
+WHERE DB_DATE < '1993-09-1';

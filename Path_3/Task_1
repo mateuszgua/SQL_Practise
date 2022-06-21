@@ -1,0 +1,5 @@
+-- 1. How many users are there in each house?
+SELECT HOUSE, COUNT(1) AS NUM_USERS
+FROM USERS
+GROUP BY HOUSE
+ORDER BY 2 DESC;

@@ -1,0 +1,6 @@
+1. List all the employees in order of descreasing salary.
+2. List all the department names, and the number of employees in that department. Order by number of employess in department (greatest to least).
+3. List all the employees that don't have a manager.
+4. List all employees by name, and the name of their manager. If the employee doesn't have a manager, leave the column as NULL.
+5. For each manager, list the number of employees he or she is managing. For these purposes, a manager is anyone who is not managed by someone else, even if that person has no direct reports.
+6. Find the two highest paid people per department.

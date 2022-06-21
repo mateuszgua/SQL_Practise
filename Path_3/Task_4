@@ -1,0 +1,14 @@
+-- 4. List all the following links established before September 1st 1993, but this time use the users first names.
+WITH VT_NAME AS (
+	SELECT * 
+	FROM FOLLOWS F
+	LEFT JOIN
+	USERS U
+	ON F.USER_ID=U.USER_ID
+)
+SELECT VT.FIRST_NAME, U_1.FIRST_NAME, VT.DB_DATE
+FROM VT_NAME VT
+LEFT JOIN
+USERS U_1
+ON VT.FOLLOWS=U_1.USER_ID
+WHERE VT.DB_DATE < '1993-09-01';

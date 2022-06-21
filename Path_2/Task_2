@@ -1,0 +1,9 @@
+-- 2. List all the department names, and the number of employees in that department. 
+--	  Order by number of employess in department (greatest to least)
+SELECT D.DEPTNAME, COUNT(E.EMP_NAME)
+FROM DEPARTMENT D 
+LEFT JOIN
+EMPLOYEE E
+ON D.DEPTID=E.DEPT_ID
+GROUP BY D.DEPTNAME
+ORDER BY 2 DESC;

@@ -1,0 +1,13 @@
+-- 3. list all rows from the follows table, replacing both user_ids with first name.
+WITH VT_NAME AS (
+	SELECT *
+	FROM FOLLOWS F
+	LEFT JOIN
+	USERS U
+	ON F.USER_ID=U.USER_ID)
+SELECT VT.FIRST_NAME, U_1.fIRST_NAME, VT.DB_DATE
+FROM VT_NAME VT
+LEFT JOIN
+USERS U_1
+ON VT.FOLLOWS=U_1.USER_ID;
+

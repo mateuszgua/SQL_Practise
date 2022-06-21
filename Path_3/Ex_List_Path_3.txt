@@ -1,0 +1,8 @@
+1. How many users are there in each house?
+2. List all following links that were created before September 1st, 1993.
+3. List all rows from the follows table, replacing both user_ids with first name.
+4. List all the following links established before September 1st 1993, but this time use the users first names.
+5. Give a count of how many people followed each user as of 1999-12-31. Give the result in term of "users full name, number of followers".
+6. List the number of users each user follows.
+7. List all rows from follows where someone from one house follows someone from a different house.
+8. List all unrequited followings (i.e. where A follows B but B does not follow A).

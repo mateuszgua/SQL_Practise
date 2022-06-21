@@ -1,0 +1,4 @@
+--1. Select all rows from December 1st, 2000 to December 15th, 2000 (inclusive)
+SELECT *
+FROM SEATTLE_WEATHER
+WHERE (DATE_WEATHER >= '2000-12-01') AND (DATE_WEATHER <= '2000-12-15')

@@ -1,0 +1,7 @@
+-- 9. Get the 10 years with the coldest average minimum temperature in December. Order from coolest to hottest.
+SELECT EXTRACT(YEAR FROM DATE_WEATHER) AS YEAR, AVG(TEMP_MIN) AS AVG_TEM
+FROM SEATTLE_WEATHER
+WHERE EXTRACT(MONTH FROM DATE_WEATHER)=12
+GROUP BY 1
+ORDER BY 2
+LIMIT 10;

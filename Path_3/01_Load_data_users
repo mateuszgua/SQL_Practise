@@ -1,0 +1,3 @@
+-- Load data
+COPY FOLLOWS FROM 'C:\Users\m.gula\Desktop\PSQL\Exercises\SQL_Practice\03_social_network\follows.csv'
+DELIMITER ',' CSV HEADER;

@@ -1,0 +1,4 @@
+-- 3. List all the employees that don't have a manager.
+SELECT EMP_NAME, MANAGER_ID
+FROM EMPLOYEE
+WHERE MANAGER_ID IS NULL;

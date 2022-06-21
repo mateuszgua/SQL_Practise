@@ -1,0 +1,6 @@
+-- 3. Get the standard deviation of the maximum temperature per year, from 2000 onward. Order by year (ascending)
+SELECT EXTRACT(YEAR FROM DATE_WEATHER) AS YEAR, STDDEV(TEMP_MAX) AS STD_DEV_MAX_TEMP
+FROM SEATTLE_WEATHER
+WHERE EXTRACT(YEAR FROM DATE_WEATHER) >= 2000
+GROUP BY 1
+ORDER BY 1;

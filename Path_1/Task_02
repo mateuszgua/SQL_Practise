@@ -1,0 +1,8 @@
+-- 2. Get the average maximum temperature for every year from the year 2000 onward. Order the results by year (ascending)
+SELECT EXTRACT(YEAR FROM DATE_WEATHER) AS YEAR, AVG(TEMP_MAX) AS AVG_HIGH_TEMP
+FROM SEATTLE_WEATHER
+WHERE EXTRACT(YEAR FROM DATE_WEATHER) >= 2000
+GROUP BY 1
+ORDER BY 1;
+
+

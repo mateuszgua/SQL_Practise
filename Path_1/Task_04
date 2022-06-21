@@ -1,0 +1,5 @@
+-- 4. What are the 10 hottest days on record? Take hottest to mean 'highest maximum temperature'.
+SELECT *
+FROM SEATTLE_WEATHER
+ORDER BY TEMP_MAX DESC
+LIMIT 10;

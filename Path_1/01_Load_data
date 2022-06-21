@@ -1,0 +1,1 @@
+COPY SEATTLE_WEATHER(DATE_WEATHER, INCHES_RAIN, TEMP_MAX, TEMP_MIN, DID_RAIN) FROM 'C:\Users\m.gula\Desktop\PSQL\Exercises\SQL_Practice\01_seattle_weather\cleaned_weather.csv' DELIMITER ',' CSV HEADER;

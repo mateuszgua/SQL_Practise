@@ -1,0 +1,4 @@
+-- 1. List all the employees in order of descreasing salary.
+SELECT *
+FROM EMPLOYEE
+ORDER BY SALARY DESC;

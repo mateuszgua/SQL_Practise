@@ -1,0 +1,4 @@
+-- 6. What is the 75th percentile for the amount of rain that fell on a day where there was some rain in 2016?
+SELECT PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY INCHES_RAIN)
+FROM SEATTLE_WEATHER
+WHERE (EXTRACT(YEAR FROM DATE_WEATHER)=2016) AND (DID_RAIN='TRUE');

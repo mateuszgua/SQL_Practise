@@ -1,0 +1,12 @@
+-- 5. Give a count of how many people followed each user as of 1999-12-31. Give the result in term of "users full name, number of followers".
+WITH VT_FOLLOWS AS (
+	SELECT *
+	FROM FOLLOWS F
+	LEFT JOIN
+	USERS U
+	ON F.FOLLOWS=U.USER_ID
+)
+SELECT (VT.FIRST_NAME || ' ' || VT.LAST_NAME) AS FULL_NAME, COUNT(VT.FOLLOWS)
+FROM VT_FOLLOWS VT
+WHERE VT.DB_DATE <= '1999-12-31'
+GROUP BY FULL_NAME

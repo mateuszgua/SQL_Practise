@@ -1,0 +1,10 @@
+-- 5. For each manager, list the number of employees he or she is managing. 
+--    For these purposes, a manager is anyone who is not managed by someone else, 
+--    even if that person has no direct reports.
+SELECT A.EMP_NAME AS MANAGER, COUNT(B.EMP_ID) AS NUM_EMP
+FROM EMPLOYEE A
+LEFT JOIN
+EMPLOYEE B
+ON A.EMP_ID=B.MANAGER_ID
+WHERE A.MANAGER_ID IS NULL
+GROUP BY 1;
